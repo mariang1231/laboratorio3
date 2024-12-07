@@ -1,0 +1,139 @@
+:root {
+  --verde: #659287;
+  --oliva: #b1c29e;
+  --fondo: #f5f5f5;
+  --verdefuerte: #185519;
+  --gris-claro: #f4f4f4;
+  --gris-texto: #333333;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris-texto);
+  line-height: 1.6;
+  background-color: #ffffff; /* Blanco puro */
+  box-sizing: border-box;
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura */
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Logo en la primera columna, nav ocupa el resto */
+  align-items: center; /* Centra verticalmente */
+  padding: 10px 20px;
+  background-color: var(--fondo); /* Fondo suave */
+  box-shadow: var(--box-shadow); /* Sombra para un efecto moderno */
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido del logo */
+  gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo img {
+  border-radius: 50%; /* Hace la imagen circular */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo p {
+  font-size: 1.2rem; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color de texto */
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  justify-content: flex-end; /* Alinea a la derecha */
+  list-style: none; /* Sin viñetas */
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+nav li a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #333; /* Color del texto */
+  font-size: 1rem; /* Tamaño del texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Efecto suave */
+}
+
+/* Hover en enlaces */
+nav li a:hover {
+  background-color: #007bff; /* Fondo azul */
+  color: #fff; /* Texto blanco */
+}
+
+<!--:-moz-any-link {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding: 2rem 2rem;
+}
+-->
+
+
+.container,
+h1 {
+  margin-top: 1rem;
+  flex: 1; /* Hace que el contenido crezca para ocupar el espacio restante */
+} 
+
+.container,
+h1,
+img {
+  text-align:center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.sectiones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px 15px;
+  margin: 15px 15px;
+}
+
+#home,h1{
+    text-align: center;
+    padding: 25px;
+
+}
+
+#nosotros,h1{
+    text-align: center;
+    padding: 25px;
+
+}
+
+
+#contacto,h1{
+    text-align: center;
+    padding: 25px;
+
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo en la primera columna, resto en la otra */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px 20px;
+    background-color: var(--fondo, #f5f5f5); /* Fondo suave, configurable con CSS variables */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: sticky; /* Mantiene el footer pegado al final */
+    bottom: 0; /* Posición en la parte inferior */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  }
+  
+  footer p {
+    margin: 0;
+    text-align: center;
+    color: #333; /* Texto oscuro para contraste */
+    font-size: 0.9rem;
+  }
